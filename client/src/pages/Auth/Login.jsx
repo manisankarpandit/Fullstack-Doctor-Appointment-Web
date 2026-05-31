@@ -12,9 +12,9 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     try {
-      console.log("login==> ", name, email, password);
+      console.log("login==> ", email, password);
       toast.success("login successfully");
-      navigate("/profile");
+      navigate("/user/profile");
       setEmail("");
       setPassword("");
     } catch (error) {
